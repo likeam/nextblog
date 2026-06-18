@@ -28,8 +28,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className=" min-h-dvh bg-zinc-200 text-zinc-950 ">
-        <div className=" mx-auto flex min-h-dvh w-full max-w-[1100px] flex border-x border-zinc-300 bg-white">
+        <div className=" mx-auto flex min-h-dvh w-full max-w-[1100px] flex flex-col border-x border-zinc-300 bg-white">
+          <header className=" "></header>
           <main className=" flex-1 px-4 py-8 sm:px-6 sm:py-10">{children}</main>
+          <footer className=" flex h-14 items-center border-t px-4 text-sm text-zinc-500 sm:px-6">
+            @2026 HB Digital
+          </footer>
         </div>
       </body>
     </html>
