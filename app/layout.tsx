@@ -27,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="max-h-svh">
+      <body className="max-h-svh ">
         <div className=" bg-slate-200 text-slate-900 antialiased selection:bg-indigo-500 selection:text-white">
           <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
             <div className="mx-auto flex max-w-7xl h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -41,25 +41,17 @@ export default function RootLayout({
               </div>
 
               <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-                <a href="#" className="text-indigo-600 transition-colors">
+                <a href="" className="text-indigo-600 transition-colors">
                   Home
                 </a>
-                <a href="#" className="hover:text-slate-900 transition-colors">
-                  Articles
-                </a>
-                <a href="#" className="hover:text-slate-900 transition-colors">
-                  Tutorials
-                </a>
-                <a href="#" className="hover:text-slate-900 transition-colors">
-                  About
+
+                <a
+                  href="/posts"
+                  className="hover:text-slate-900 transition-colors"
+                >
+                  Posts
                 </a>
               </nav>
-
-              <div className="flex items-center gap-4">
-                <button className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-slate-800 hover:shadow-md active:scale-95">
-                  Subscribe
-                </button>
-              </div>
             </div>
           </header>
           <main className=" flex-1 min-h-svw px-4 py-8 sm:px-6 sm:py-10">
