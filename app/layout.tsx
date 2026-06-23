@@ -42,7 +42,7 @@ export default function RootLayout({
               </div>
 
               <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-                <Link href="" className="text-indigo-600 transition-colors">
+                <Link href="/" className="text-indigo-600 transition-colors">
                   Home
                 </Link>
 
