@@ -29,7 +29,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="max-h-svh ">
-        <div className=" bg-slate-200 text-slate-900 antialiased selection:bg-indigo-500 selection:text-white">
+        <div className=" mx-auto flex flex-col min-h-dvh w-full  bg-slate-200 text-slate-900 antialiased selection:bg-indigo-500 selection:text-white">
           <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
             <div className="mx-auto flex max-w-7xl h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
               <div className="flex items-center gap-2">
