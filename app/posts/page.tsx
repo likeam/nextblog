@@ -1,9 +1,9 @@
+import { PrerenderManifestMatcher } from "next/dist/server/route-modules/app-page/helpers/prerender-manifest-matcher";
 import Link from "next/link";
 import React from "react";
 
 export default async function PostPage() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const posts = await response.json();
+  const posts = await prisma.post.findMany();
   return (
     <div className=" space-y-8">
       <section className=" space-y-4">
